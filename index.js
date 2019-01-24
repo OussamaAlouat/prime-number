@@ -2,14 +2,16 @@ const number = 10;
 
 //Function to get all the prime numbers from 0 to 100
 const getPrimeNumbers = (totalNumber, currentNumber, primeNumbers, next) => {
-    if (currentNumber >= totalNumber)
+    if (currentNumber >= totalNumber) {
         return finish(primeNumbers);
+
+    }
 
     getDivisores(currentNumber)
         .then((res) => {
-            if (res === 2) {
-
-                next(totalNumber, ++currentNumber, primeNumbers.concat(currentNumber), next)
+            if (res === 2 && currentNumber % 2 !== 0) {
+                const currentNumberToAdd = currentNumber;
+                next(totalNumber, ++currentNumber, Array.prototype.concat(primeNumbers, currentNumberToAdd) , next)
             } else {
                 next(totalNumber, ++currentNumber, primeNumbers, next)
             }
