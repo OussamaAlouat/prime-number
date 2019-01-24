@@ -1,5 +1,5 @@
 const number = 10;
-
+//Todo : Implement all tests to make sure that every thing is ok.
 //Function to get all the prime numbers from 0 to 100
 const getPrimeNumbers = (totalNumber, currentNumber, primeNumbers, next) => {
     if (currentNumber >= totalNumber) {
