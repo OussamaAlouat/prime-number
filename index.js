@@ -37,3 +37,8 @@ const getDivisores = (number) => {
 //TODO : Do it with recursivity.
 
 getPrimeNumbers(number, 1, [], getPrimeNumbers);
+
+export   {
+     getDivisores,
+     getPrimeNumbers
+}
