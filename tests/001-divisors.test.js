@@ -24,3 +24,14 @@ test('---- Divisors of 10-----', (assert) => {
         })
 });
 
+test('---- Divisors of 10-----', (assert) => {
+    const message = 'Number 100 have 9 divisors, so the result should be 9 (1, 2, 4 ,5, 10, 20, 25, 50, 100)';
+    const expectedResult = 9;
+    const number = 100;
+    getDivisors(number)
+        .then((res) => {
+            assert.equal(res, expectedResult, message);
+            assert.end()
+
+        })
+});
