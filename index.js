@@ -24,7 +24,7 @@ const finish = (result) => {
 };
 
 
-const getDivisores = (number) => {
+const getDivisors = (number) => {
     return new Promise(resolve => {
         let countOfNumbers = 0;
 
@@ -36,11 +36,10 @@ const getDivisores = (number) => {
     })
 }
 
-//TODO : Do it with recursivity.
-
 getPrimeNumbers(number, 1, [], getPrimeNumbers);
 
+//It is necessary export the functions to use it at the tests.
 export   {
-     getDivisores,
+     getDivisors,
      getPrimeNumbers
 }
