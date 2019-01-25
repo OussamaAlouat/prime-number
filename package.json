@@ -1,6 +1,6 @@
 {
   "name": "prime-numbers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Aplication to get the prime numbers from from 0 to one number",
   "main": "index.js",
   "scripts": {
